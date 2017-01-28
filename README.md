@@ -29,8 +29,7 @@ archiving the tweets in the first place.
 
 Some examples of correct use:
 
-`$ python -W ignore TwitterTool.py --archive --media --liked`  
-
+`$ python -W ignore TwitterTool.py --archive --media --liked`    
 `$ python -W ignore TwitterTool.py --archive --delete --posted`
 
 The software then creates a folder, `Archive-Liked-Tweets` or `Archive-Personal-Tweets`,
