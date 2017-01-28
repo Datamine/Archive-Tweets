@@ -33,7 +33,7 @@ Some examples of correct use:
 `$ python -W ignore TwitterTool.py --archive --delete --posted`
 
 The software then creates a folder, `Archive-Liked-Tweets` or `Archive-Personal-Tweets`,
-depending on whether you selected `--liked` or `--posted`, respecitvely, and within that,
+depending on whether you selected `--liked` or `--posted`, respectively, and within that,
 creates a new folder for every tweet, with the path name given by the timestamp of the tweet's 
 publication and the tweet's unique identifier. Within every tweet's folder is the pretty-printed `.json` 
 object representing the tweet, as well as any attached media files, if the option to download them was selected.
@@ -56,9 +56,10 @@ the fifteen minute period is over.
 
 ## Display
 
-Display of tweets has not been a priority in development so far. There are other
-Open-Source projects that have done a reasonable job at doing this, which you can
-adapt straight-forwardly. (I'd be happy to accept a PR that generates pages rendering the archived tweets.)
+Display of tweets has not been a priority in development so far. I believe there are other
+Open-Source projects that have done [a reasonable job](https://github.com/amwhalen/archive-my-tweets) at this, which you can
+adapt straight-forwardly. (I'd be happy to accept a PR that generates pages rendering the archived tweets. It is my plan to do this eventually.)
+
 To search all the tweets in a directory for some text, `cd` into the relevant directory, and then use:
 `grep -rnw . -e "<your text here>"`
 e.g. `grep -rnw ./Archive-Liked-Tweets -e "rice pudding"`
